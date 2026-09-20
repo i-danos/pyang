@@ -79,7 +79,7 @@ class JsonXslPlugin(plugin.PyangPlugin):
         tree = ET.ElementTree(ss)
         ET.SubElement(ss, "output", method="text")
         xsltdir = os.environ.get("PYANG_XSLT_DIR",
-                                 "/usr/local/share/yang/xslt")
+                                 "usr/share/yang/xslt")
         ET.SubElement(ss, "include", href=xsltdir + "/jsonxsl-templates.xsl")
         ET.SubElement(ss, "strip-space", elements="*")
         nsmap = ET.SubElement(ss, "template", name="nsuri-to-module")

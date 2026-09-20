@@ -28,8 +28,8 @@ onlydata=0
 hello=0
 jing=0
 
-xslt_dir=${PYANG_XSLT_DIR:-/usr/local/share/yang/xslt}
-schema_dir=${PYANG_RNG_LIBDIR:-/usr/local/share/yang/schema}
+xslt_dir=${PYANG_XSLT_DIR:-usr/share/yang/xslt}
+schema_dir=${PYANG_RNG_LIBDIR:-usr/share/yang/schema}
 
 usage() {
     cat <<EOF
